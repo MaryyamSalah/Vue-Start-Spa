@@ -1,24 +1,3 @@
-# vue-start-spa
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Building the simplest Vue components and use core features like data binding, props, events, and computed properties.
+Building forms, watchers, and custom events.
+Master key concepts like the Vue router and the Composition API.
