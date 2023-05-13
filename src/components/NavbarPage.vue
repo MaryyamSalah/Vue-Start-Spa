@@ -3,7 +3,7 @@
         :class="[`navbar-${theme}`,`bg-${theme}`,'navbar' ,'navbar-expand-lg']">
         
             <ul  class="navbar-nav">
-              <li v-for="(page ,index) in pages" class="nav-item" :key ="index">
+              <li v-for="(page ,index) in publishedPgaes" class="nav-item" :key ="index">
                 <navbar-link
                 :page="page"
                 :isActive="activePage == index"
@@ -26,6 +26,11 @@ export default{
     created(){
               this.getThemeSetting
                },
+
+    computed:{
+            publishedPgaes(){
+               return this.pages.filter(p =>p.published);
+               }},
      props:['pages','activePage','navLinkClick'],
                
        data(){
